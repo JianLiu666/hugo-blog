@@ -63,7 +63,7 @@ params:
   # algolia_apiKey: ""
   sidebar_about_description: "I'm a Backend Engineer working in Taipei, Taiwan."
   sidebar_avatar: "img/jian.jpg"
-  featured_tags: true
+  featured_tags: false
   featured_condition_size: 5
   # ba_track_id: ""
   reward: false
@@ -107,12 +107,10 @@ params:
   #       image: "/img/yourimage.png"
   #       href: ""
   addtional_menus:
+    - title: TECH
+      href: /tech/
     - title: ARCHIVE
       href: /archive/
-    - title: NOTES
-      href: /notes/
-    - title: PHOTOS
-      href: /photos/
     - title: ABOUT
       href: /about/
   # algolia:
