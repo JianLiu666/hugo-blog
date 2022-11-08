@@ -61,7 +61,7 @@ params:
   # algolia_appId: ""
   # algolia_indexName: ""
   # algolia_apiKey: ""
-  sidebar_about_description: "I'm a Backend Engineer working in Taipei, Taiwan."
+  sidebar_about_description: "I'm a Software Engineer working in Taipei, Taiwan."
   sidebar_avatar: "img/jian.jpg"
   featured_tags: false
   featured_condition_size: 5
