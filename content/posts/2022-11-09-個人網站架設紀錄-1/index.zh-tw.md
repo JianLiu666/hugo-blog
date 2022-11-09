@@ -1,19 +1,27 @@
 ---
-layout: "post"
-image: ""
+weight: 1
 title: "個人網站架設紀錄 #1"
-subtitle: ""
+date: 2022-11-10T00:00:00+08:00
+lastmod: 2022-11-10T00:00:00+08:00
+draft: false
+author: "Jian"
+authorLink: "https://JianLiu666.github.io"
 description: "千里之行，始於足下"
-author: "Jian Liu"
-date: 2022-11-09
-published: true
-showtoc: true
+images: []
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
+
+tags: ["Hugo", "GitPages", "GitAction"]
 categories: []
-tags:
-    - Hugo
-    - GitPages
-    - GitAction
+
+lightgallery: true
+
+toc:
+  auto: false
 ---
+
+<!--more-->
 
 Blog 的第一篇文章就用來記錄自己從零到一的個人網站架設紀錄，使用到的工具如下：
 
@@ -41,7 +49,7 @@ Blog 的第一篇文章就用來記錄自己從零到一的個人網站架設紀
 git submodule add [-b <branch>] [--name <name>]
 
 # e.g.
-# git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+# git submodule add https://github.com/dillonzq/LoveIt.git themes/hugo-theme-loveit
 ```
 
 記得到根目錄下的 `config.yaml` 或 `config.toml` 指定該樣板
@@ -55,7 +63,7 @@ title: "your-theme"
 ...
 ```
 
-其餘的參數設定可以到 [Content Summaries](https://gohugo.io/content-management/summaries/#automatic-summary-splitting) 查詢
+其餘的參數設定可以到 [Configure Hugo](https://gohugo.io/getting-started/configuration/#themesdir) 查詢
 
 ### giscus
 
@@ -63,7 +71,7 @@ title: "your-theme"
 
 設定好後可視 theme 本身是否已經預留 giscus 的擴充功能，或是自行嵌入頁面
 
-> 這邊 shout out to Clean White Hugo Theme 的作者，真的簡潔乾淨又好用 🫡
+> 這邊 shout out to LoveIt Hugo Theme 的作者，真的簡潔乾淨又好用 🫡
 
 ## Github
 
