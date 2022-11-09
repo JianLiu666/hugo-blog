@@ -65,27 +65,24 @@ params:
   sidebar_avatar: "img/jian.jpg"
   featured_tags: false
   featured_condition_size: 5
-  # ba_track_id: ""
   reward: false
   reward_guide: "嗯，這篇文章對我有用，鼓勵一下..."
   friends: false
   bookmarks: false
   about_me: true
-  # giscus:
-  #   data_repo: zhaohuabing/zhaohuabing.github.io
-  #   data_repo_id: MDEwOlJlcG9zaXRvcnkxMzc3MjcyMjM=
-  #   data_category: Announcements
-  #   data_category_id: DIC_kwDOCDWM984CAWAt
-  #   data_mapping: pathname
-  #   data_reactions_enabled: '1'
-  #   data_emit_metadata: '0'
-  #   data_theme: light
-  #   data_lang: en
-  #   crossorigin: anonymous
-
-  # We need a proxy to access Disqus api in China
-  # disqus_proxy : 'https://disqusapi.zhaohuabing.com'
-  # disqus_site : 'https://zhaohuabing.com'
+  giscus:
+    data_repo: "JianLiu666/JianLiu666.github.io"
+    data_repo_id: "MDEwOlJlcG9zaXRvcnkzMjQyMDA3OTg"
+    data_category: "Announcements"
+    data_category_id: "DIC_kwDOE1LpXs4CSc7s"
+    data_mapping: "pathname"
+    data-strict: "0"
+    data_reactions_enabled: "1"
+    data_emit_metadata: "0"
+    data-input-position: "top"
+    data_theme: "light"
+    data_lang: "en"
+    crossorigin: "anonymous"
   social:
     rss: true
     email: "jianliu0616@gmail.com"
@@ -94,21 +91,19 @@ params:
     # twitter: ""
     # wechat: ""
     # medium: ""
-  # friend_link:
-  #   - title: ""
-  #     href: ""
-  # bookmark_link:
-  #   - title: ""
-  #     href: ""
-  # publications:
-  #   title: MY BOOKS
-  #   items:
-  #     - title: ""
-  #       image: "/img/yourimage.png"
-  #       href: ""
+    # friend_link:
+    #   - title: ""
+    #     href: ""
+    # bookmark_link:
+    #   - title: ""
+    #     href: ""
+    # publications:
+    #   title: MY BOOKS
+    #   items:
+    #     - title: ""
+    #       image: "/img/yourimage.png"
+    #       href: ""
   addtional_menus:
-    - title: TECH
-      href: /tech/
     - title: ARCHIVE
       href: /archive/
     - title: ABOUT
