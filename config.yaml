@@ -72,9 +72,9 @@ params:
   about_me: true
   giscus:
     data_repo: "JianLiu666/JianLiu666.github.io"
-    data_repo_id: "MDEwOlJlcG9zaXRvcnkzMjQyMDA3OTg"
+    data_repo_id: "R_kgDOIZSXWA"
     data_category: "Announcements"
-    data_category_id: "DIC_kwDOE1LpXs4CSc7s"
+    data_category_id: "DIC_kwDOIZSXWM4CSdaT"
     data_mapping: "pathname"
     data-strict: "0"
     data_reactions_enabled: "1"
