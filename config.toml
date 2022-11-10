@@ -19,7 +19,7 @@ languageCode = "zh-TW"
 languageName = "繁體中文"
 # whether to include Chinese/Japanese/Korean
 # 是否包括中日韩文字
-hasCJKLanguage = false
+hasCJKLanguage = true
 
 # default amount of posts in each pages
 # 默认每页列表显示的文章数目
