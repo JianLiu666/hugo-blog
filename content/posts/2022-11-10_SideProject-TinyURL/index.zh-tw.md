@@ -228,21 +228,36 @@ services:
 
 ### Locust
 
-施工中 ...
+{{< image src="./benchmark-locust.png" caption="Benchmark with 1000 users & 10 minutes" >}}
+
+上圖是使用 `locust.io` 這套 Python 的壓測工具實測出來的結果，以 100 : 1 的讀寫請求模擬使用場景，RPS 平均落在 ~1460 左右
 
 ### Grafana
 
 #### Server
 
-施工中 ...
+{{< image src="./benchmark-server.png" caption="Grafana with TinyURL server metrics" >}}
+
+同一時間 Prometheus 對 Server 採集到的指標
 
 #### MySQL
 
-施工中 ...
+{{< image src="./benchmark-mysql-1.png" caption="Grafana with MySQL metrics" >}}
+{{< image src="./benchmark-mysql-2.png" caption="Grafana with MySQL metrics" >}}
+
+僅擷取 MySQL 的部分 metrics，可以發現 server 對 MySQL 的請求數並不高，QPS 僅有 40~50
 
 #### Redis
 
-施工中 ...
+{{< image src="./benchmark-redis.png" caption="Grafana with Redis metrics" >}}
+
+原因在於大部分的查詢都能在 Redis 處理完畢
+
+<br>
+
+更多的測試模擬可以從 [python script](https://github.com/JianLiu666/TinyURL/blob/main/benchmark/locustfile.py) 中找到，這裡就不逐一展開  
+
+有興趣的朋友可以下載我的 [repo](https://github.com/JianLiu666/TinyURL) 後自行使用，過程中若有遇到問題也歡迎提供給我一起研究
 
 ---
 
@@ -250,13 +265,15 @@ services:
 
 ### MurmurHash3
 
-施工中 ...
+關於 `加密雜湊算法` 與 `非加密雜湊算法` 之間的原理，我想留到下次在做一個完整的筆記
 
 ---
 
 ## 後記
 
-施工中 ...
+這次實作讓我釐清了很多當時在看 System Design 時不清楚的細節，但也因為這次主要是為了練習 POC，因此在實作過程中省略了不少細節
+
+- e.g. 跨資料庫時的一致性保證、災難復原 & 故障轉移機制、限流機制、etc.
 
 ---
 
