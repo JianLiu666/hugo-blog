@@ -1,9 +1,9 @@
 ---
 weight: 1
 title: "Side Project: URL Shortening service"
-date: 2022-11-10T00:00:00+08:00
-lastmod: 2022-11-10T00:00:00+08:00
-draft: true
+date: 2022-11-14T00:00:00+08:00
+lastmod: 2022-11-14T00:00:00+08:00
+draft: false
 author: "Jian"
 authorLink: "https://JianLiu666.github.io"
 description: "Create a shorter aliases for original URLs."
@@ -265,19 +265,98 @@ services:
 
 ### MurmurHash3
 
-關於 `加密雜湊算法` 與 `非加密雜湊算法` 之間的原理，我想留到下次在做一個完整的筆記
+{{< echarts >}}
+{
+  "title": {
+    "text": "Benchmark of Hash Functions",
+    "subtext": "script on TinyURL/benchmark/hash_test.go",
+    "sublink": "https://github.com/JianLiu666/TinyURL/blob/main/benchmark/hash_test.go",
+    "top": "2%",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis"
+  },
+  "legend": {
+    "data": ["MD5", "SHA-1", "SHA-256", "Murmur3-32", "Murmur3-64", "Murmur3-128"],
+    "top": "14%"
+  },
+  "grid": {
+    "left": "5%",
+    "right": "5%",
+    "bottom": "5%",
+    "top": "24%",
+    "containLabel": true
+  },
+  "xAxis": {
+    "type": "category",
+    "boundaryGap": true,
+    "data": ["1k", "10k", "100k"]
+  },
+  "yAxis": {
+    "name": "單位(ns/op)"
+  },
+  "series": [
+    {
+      "name": "MD5",
+      "type": "bar",
+      "data": [1791, 16716, 165761]
+    },
+    {
+      "name": "SHA-1",
+      "type": "bar",
+      "data": [512.1, 4532, 45077]
+    },
+    {
+      "name": "SHA-256",
+      "type": "bar",
+      "data": [521.6, 4651, 45926]
+    },
+    {
+      "name": "Murmur3-32",
+      "type": "bar",
+      "data": [498.1, 4948, 49846]
+    },
+    {
+      "name": "Murmur3-64",
+      "type": "bar",
+      "data": [206.9, 1978, 19599]
+    },
+    {
+      "name": "Murmur3-128",
+      "type": "bar",
+      "data": [205.0, 1977, 19557]
+    }
+  ]
+}
+{{< /echarts >}}
+
+針對 `加密雜湊算法` 與 `非加密雜湊算法` 之間的原理，我想留到下次在針對這個主題做完整的筆記
+
+這裡只列出 `MurmurHash3` 與其他雜湊算法的 10 萬次壓測結果比較
 
 ---
 
 ## 後記
 
-這次實作讓我釐清了很多當時在看 System Design 時不清楚的細節，但也因為這次主要是為了練習 POC，因此在實作過程中省略了不少細節
+這次的 side project 讓我釐清了很多當時在看 System Design 時不清楚的設計目的，但也因為這次主要是為了練習 POC，因此在實作過程中省略了不少細節考量：
 
 - e.g. 跨資料庫時的一致性保證、災難復原 & 故障轉移機制、限流機制、etc.
+
+<br>
+
+針對 POC 來說，這次主要練習了從零到一過程中的 `需求分析` ➜ `可行性評估` ➜ `撰寫開發文件` ➜ `需求開發` ➜ `釋出 protype` ➜ `壓力測試` & `系統監控`
+
+<br>
+
+在工作中除非能夠從頭參與項目誕生，否則上述流程通常在初期就會決定完畢，後期大部分時間都是根據現有框架繼續開發需求或小規模重構/優化
+
+隨著專案日漸龐大也越難有大規模改造的機會，因此這次的 side project 是個不錯的練習，可以補足平常較少接觸到的部分，之後有空時再來挑選其他主題繼續練習 POC
 
 ---
 
 ## References
 
+- [TinyURL](https://tinyurl.com/app)
 - [Semrush](https://www.semrush.com/)
 - [短 URL 系统是怎么设计的？](https://www.zhihu.com/question/29270034)
