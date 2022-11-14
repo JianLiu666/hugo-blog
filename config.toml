@@ -30,7 +30,7 @@ paginate = 12
 
 # google analytics code [UA-XXXXXXXX-X]
 # 谷歌分析代号 [UA-XXXXXXXX-X]
-googleAnalytics = ""
+googleAnalytics = "G-N2YX1B6VJK"
 
 # copyright description used only for seo schema
 # 版权描述，仅仅用于 SEO
@@ -42,7 +42,7 @@ enableRobotsTXT = true
 
 # whether to use git commit log
 # 是否使用 git 信息
-enableGitInfo = true
+enableGitInfo = false
 
 # whether to use emoji code
 # 是否使用 emoji 代码
@@ -655,7 +655,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = false
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-N2YX1B6VJK"
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
