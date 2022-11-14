@@ -1,8 +1,8 @@
 ---
 weight: 1
 title: "個人網站架設紀錄 #1"
-date: 2022-11-10T00:00:00+08:00
-lastmod: 2022-11-10T00:00:00+08:00
+date: 2022-11-09T00:00:00+08:00
+lastmod: 2022-11-09T00:00:00+08:00
 draft: false
 author: "Jian"
 authorLink: "https://JianLiu666.github.io"
