@@ -1,24 +1,15 @@
 ---
-weight: 1
 title: "Side Project: URL Shortening service"
-date: 2022-11-14T00:00:00+08:00
-lastmod: 2022-11-14T00:00:00+08:00
-draft: false
+description: "Create a shorter aliases for original URLs."
 author: "Jian"
 authorLink: "https://JianLiu666.github.io"
-description: "Create a shorter aliases for original URLs."
-images: []
+date: 2022-11-14T00:00:00+08:00
+draft: false
+categories: ["Side Project"]
+tags: ["Golang", "Side Project", "System Design", "TinyURL"]
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
-
-tags: ["Golang", "Side Project", "System Design", "TinyURL"]
-categories: []
-
-lightgallery: true
-
-toc:
-  auto: false
 ---
 
 <!--more-->

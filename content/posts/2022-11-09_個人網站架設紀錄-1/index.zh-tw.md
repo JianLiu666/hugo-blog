@@ -1,24 +1,15 @@
 ---
-weight: 1
 title: "個人網站架設紀錄 #1"
-date: 2022-11-09T00:00:00+08:00
-lastmod: 2022-11-09T00:00:00+08:00
-draft: false
+description: "千里之行，始於足下"
 author: "Jian"
 authorLink: "https://JianLiu666.github.io"
-description: "千里之行，始於足下"
-images: []
+date: 2022-11-09T00:00:00+08:00
+draft: false
+categories: ["Blog"]
+tags: ["Hugo", "GitPages", "GitAction"]
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
-
-tags: ["Hugo", "GitPages", "GitAction"]
-categories: []
-
-lightgallery: true
-
-toc:
-  auto: false
 ---
 
 <!--more-->
