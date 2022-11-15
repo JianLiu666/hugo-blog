@@ -658,7 +658,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       id = "G-N2YX1B6VJK"
       # whether to anonymize IP
       # 是否匿名化用户 IP
-      anonymizeIP = false
+      anonymizeIP = true
     # Fathom Analytics
     [params.analytics.fathom]
       id = ""
