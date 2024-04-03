@@ -307,8 +307,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = "https://github.com/JianLiu666"
-    Linkedin = "https://www.linkedin.com/in/jianliou/"
+    GitHub = "JianLiu666"
+    Linkedin = "jianliou/"
     Twitter = ""
     Instagram = ""
     Facebook = ""
